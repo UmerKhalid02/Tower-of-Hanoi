@@ -1,0 +1,76 @@
+<!-- BSCS20002 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Tower of Hanoi</title>
+</head>
+<body>
+    <h1>Tower of Hanoi</h1>
+
+    <div class="page-menu">
+        <div class="menu">
+            <h1 id="message"></h1>
+            <p id="total-moves"></p>
+
+            <div class="buttons">
+                <button id="close"><i class="fa fa-close fa-2x"></i></button>
+                <button id="res"><i class="fa fa-rotate-left fa-2x"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-container">
+        
+        <div class="undo">
+            <button id="undo-btn" class="btn"><i class="fa fa-rotate-left fa-2x"></i></button>
+        </div>
+
+        <div class="dec-disks">
+            <button id="dec-btn" class="btn"><i class="fa fa-caret-down fa-2x"></i></button>
+        </div>
+
+        <div class="disk-count" id="disk-count">3</div>
+        
+        <div class="inc-disks">
+            <button id="inc-btn" class="btn"><i class="fa fa-caret-up fa-2x"></i></button>
+        </div>
+        
+        <div class="redo">
+            <button id="redo-btn" class="btn"><i class="fa fa-rotate-right fa-2x"></i></button>
+        </div>
+    
+    </div>
+
+    <div class="tower-container" id="tower-container">
+        <div class="tower" id="tower-1"><div class="disks" id="disk-1" draggable="false"></div><div class="disks" id="disk-2" draggable="false"></div><div class="disks" id="disk-3" draggable="false"></div></div>
+        <div class="tower" id="tower-2"></div>
+        <div class="tower" id="tower-3"></div>
+    </div>
+
+    <footer>
+        <div class="timer">
+            <p>Time Remaining: <span id="timer">00:00</span></p>
+        </div>
+        
+        <div class="restart">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        
+        <div class="moves">
+            <p>Moves: <span id="moves">0</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
